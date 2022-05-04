@@ -2,11 +2,11 @@ package main;
 
 public class Person {
     private String name;
-    private int age;
+    private double age;
     private int survived;
     private String sex;
 
-    public Person(String name, int age, int survived, String sex) {
+    public Person(String name, double age, int survived, String sex) {
         this.name = name;
         this.age = age;
         this.survived = survived;
@@ -17,7 +17,7 @@ public class Person {
         return name;
     }
 
-    public int getAge() {
+    public double getAge() {
         return age;
     }
 
@@ -27,5 +27,15 @@ public class Person {
 
     public String getSex() {
         return sex;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", survived=" + survived +
+                ", sex='" + sex + '\'' +
+                '}';
     }
 }
